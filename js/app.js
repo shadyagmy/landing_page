@@ -112,5 +112,11 @@ const checkScrolling = () => {
     }, 2000);
 }
 
+navBar.addEventListener("mouseover", () => {
+    window.clearTimeout(isScrolling);
+    navBar.style.maxHeight = "500px";
+})
+
+
 
 
